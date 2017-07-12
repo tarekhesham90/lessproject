@@ -1,0 +1,38 @@
+@cfonts: #006699;
+@cfonts600: #990000;
+@borders: 2px;
+
+@media (max-width: 600px) {
+  h1
+  {
+    color: @cfonts600;
+  }
+  #container
+  {
+    height: 125px;
+    width: 100%;
+    border-style: solid;
+    background-color: beige;
+    border-color: @cfonts600;
+    border-width: @borders;
+    border-radius: @borders;
+    text-align: center;
+  }
+
+}
+@media (min-width: 600px) {
+  h1 {
+    color: @cfonts;
+  }
+
+  #container {
+    height: 125px;
+    width: 100%;
+    border-style: solid;
+    background-color: beige;
+    border-color: @cfonts;
+    border-width: @borders;
+    border-radius: @borders;
+    text-align: center;
+  }
+}
